@@ -1,4 +1,4 @@
-﻿namespace ATV8_CJ3021955
+namespace ATV8_CJ3021955
 {
     internal class Program
     {
@@ -19,8 +19,9 @@
             {
                 for (int j = 0; j <= 10; j++) //percorre coluna
                 {
-                    Console.Write(tab[i, j] );
+                    Console.Write( " {0}  " , tab[i, j] );
                 }
+                Console.WriteLine();
             }
         }
     }

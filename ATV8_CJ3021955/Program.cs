@@ -19,7 +19,7 @@ namespace ATV8_CJ3021955
             {
                 for (int j = 0; j <= 10; j++) //percorre coluna
                 {
-                    Console.Write( " {0}  " , tab[i, j] );
+                    Console.Write( " {0:00}  " , tab[i, j] );
                 }
                 Console.WriteLine();
             }

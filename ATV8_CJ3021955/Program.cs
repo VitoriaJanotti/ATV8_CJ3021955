@@ -25,13 +25,20 @@ for (int i = 1; i <= 8; i++) //Atribui os pares de números às posições
 int acertos = 0;
 do
 {
+    Console.Write("   ");
+    for (int j = 0; j < 4; j++)
+    {
+        Console.Write("  {0} ", j + 1);
+    }
+    Console.WriteLine("\n--------------------");
     for (int i = 0; i < 4; i++)
     {
+        Console.Write("{0}  |", i + 1);
         for (int j = 0; j < 4; j++)
         {
-            Console.Write("| {0} ", tela[i, j]);
+            Console.Write(" {0} |", tela[i, j]);
         }
-        Console.WriteLine("\n---------------");
+        Console.WriteLine("\n--------------------");
      
     }
     Console.WriteLine();
@@ -65,9 +72,9 @@ do
     {
         for (int j = 0; j < 4; j++)
         {
-            Console.Write("| {0} ", tela[i, j]);
+            Console.Write(" {0} |", tela[i, j]);
         }
-        Console.WriteLine("\n---------------");
+        Console.WriteLine("\n--------------------");
     }
     Console.WriteLine();
 
@@ -100,9 +107,9 @@ do
     {
         for (int j = 0; j < 4; j++)
         {
-            Console.Write("| {0} ", tela[i, j]);
+            Console.Write(" {0} |", tela[i, j]);
         }
-        Console.WriteLine("\n---------------");
+        Console.WriteLine("\n--------------------");
     }
     Console.WriteLine();
 

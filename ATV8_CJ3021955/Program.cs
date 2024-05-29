@@ -1,3 +1,5 @@
+using System.Diagnostics;
+
 int[,] jogo = new int[4, 4];
 int[,] tela = new int[4, 4];
 
@@ -27,9 +29,10 @@ do
     {
         for (int j = 0; j < 4; j++)
         {
-            Console.Write("{0} ", tela[i, j]);
+            Console.Write("| {0} ", tela[i, j]);
         }
-        Console.WriteLine();
+        Console.WriteLine("\n---------------");
+     
     }
     Console.WriteLine();
 
@@ -62,9 +65,9 @@ do
     {
         for (int j = 0; j < 4; j++)
         {
-            Console.Write("{0} ", tela[i, j]);
+            Console.Write("| {0} ", tela[i, j]);
         }
-        Console.WriteLine();
+        Console.WriteLine("\n---------------");
     }
     Console.WriteLine();
 
@@ -97,9 +100,9 @@ do
     {
         for (int j = 0; j < 4; j++)
         {
-            Console.Write("{0} ", tela[i, j]);
+            Console.Write("| {0} ", tela[i, j]);
         }
-        Console.WriteLine();
+        Console.WriteLine("\n---------------");
     }
     Console.WriteLine();
 
@@ -113,6 +116,13 @@ do
     else
     {
         acertos++;
+     
     }
+    Console.WriteLine("Deseja continuar jogogando? \n\n*DIGITE 1 PARA SAIR \n*DIGITE QUALQUER OUTRO NUMERO PARA CONTINUAR ");
+    int opc = int.Parse(Console.ReadLine());
+
+    if (opc == 1)
+        break;
 
 } while (acertos < 8);
+
